@@ -20,13 +20,14 @@ solve columnConstraints rowConstraints = ...
 solve [[1],[1],[1],[1]] [[1],[1],[1],[1]] 
 ```
 
-An exe version can be run too. The inputs are the same as the haskell type above. This is demonstrated in the example below. Be sure to type each constraint on a single line.
-Column constraints: [[1],[1],[1],[1]]
-Row constraints: [[1],[1],[1],[1]]
-X---
--X--
---X-
----X
+An exe version can be run too. The inputs are the same as the haskell type above. This is demonstrated in the example below. Be sure to type each constraint on a single line.  
+
+Column constraints: [[1],[1],[1],[1]]  
+Row constraints: [[1],[1],[1],[1]]  
+X---  
+-X--  
+--X-  
+---X  
 
 
 #### Output
@@ -60,7 +61,7 @@ _The test code is in test/NonogramSolverSpec.hs_
 #### Running in the REPL
 1. $ stack ghci
 2. > :l src/NonogramSolver.hs
-3. example: > solve [] []
+3. > solve [] [] -- repl example
 
 ### Programming Assignment Miscallaneous
 
