@@ -51,6 +51,7 @@ X---
 ### How to Run the Program
 _step 6 runs the executable_  
 _The executable code in app/Main.hs_  
+  
 1. Clone this repo: git clone https://github.com/nickgeoca/nonogram_solver.git  
 2. Install [stack](https://docs.haskellstack.org/en/stable/README/#how-to-install)  
 3. $ cd nonogram_solver  
