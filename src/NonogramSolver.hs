@@ -20,6 +20,7 @@ getValidRowGuesses guess (validRowStates:nextValidRowsStates) constraintColumns 
 -- True
 -- >>> or $ map (== (validRowStates 4 [])) (permutations [[0,0,0,0]])
 -- True
+-- | This gets a list of all valid states of a single row. Eg fn 2 [1] => [[0,1],[1,0]]
 validRowStates :: Int -> [Int] -> [[Int]]
 validRowStates rowLen rowRunsOn = 
     case length rowRunsOn of
@@ -52,7 +53,10 @@ validRowStates rowLen rowRunsOn =
   blend (x:xs) ys = x:(blend ys xs)
   blend _ _ = []
 
-solve :: [[Int]] -> [[Int]] -> Maybe [[Int]]
+-- | Nonogram solver function. 
+solve :: [[Int]]       -- ^ Constraint columns
+      -> [[Int]]       -- ^ Constraint rows
+      -> Maybe [[Int]] -- ^ Result. 1 is on, 0 is off.
 solve constraintColumns constraintRows = headMaybe $ 
   do validRowGuess <- getValidRowGuesses [] validRowsStates constraintColumns
      stopIfInvalidColumns validRowGuess
