@@ -11,6 +11,7 @@ The input data are column constraints followed by row constraints. These are eac
 * The column constraints type is [[Int]]
 * The row constraints type is [[Int]]
 
+**Library Code**  
 In the library, the solve function solves the nonogram. The type is seen below.
 ```haskell
 solve :: [[Int]] -> [[Int]] -> Maybe [[Int]]
@@ -20,6 +21,7 @@ solve columnConstraints rowConstraints = ...
 solve [[1],[1],[1],[1]] [[1],[1],[1],[1]] 
 ```
 
+**Executable**  
 An exe version can be run too. The inputs are the same as the haskell type above. This is demonstrated in the example below. Be sure to type each constraint on a single line.  
 
 Column constraints: [[1],[1],[1],[1]]  
@@ -31,10 +33,12 @@ X---
 
 
 #### Output
+**Library Code**
 The output in the library function is a Maybe [[Int]]. It returns Nothing if there is no solution, otherwise it returns the first solution it found wrapped in Just.
 * Ex: Just [[1,0],[0,0]]
 * Ex: Nothing
 
+**Executable**
 The output of the exe is text. The 'X' is an active pixels and the '-' is an inactive pixel. For example:
 ```js
 X---
