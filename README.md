@@ -60,10 +60,10 @@ _The executable code in app/Main.hs_
 6. $ stack exec nonogram-solver-exe # run exe  
 
 #### Running Tests
-_The test code is in test/NonogramSolverSpec.hs_
+_The test code is in test/NonogramSolverSpec.hs_  
 1. cd into the project directory
 2. $ stack test
-..* This is what should report after running: "7 examples, 0 failures"
+  * This is what should report after running: "7 examples, 0 failures"
 
 #### Running in the REPL
 1. $ stack ghci
