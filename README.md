@@ -36,15 +36,16 @@ The output in the library function is a Maybe [[Int]]. It returns Nothing if the
 * Ex: Nothing
 
 The output of the exe is text. The 'X' is an active pixels and the '-' is an inactive pixel. For example:
+```js
 X---
 -X--
 --X-
 ---X
-
+```
 
 ### How to Run the Program
-_step 6 runs the executable_
-_The executable code in app/Main.hs_
+_step 6 runs the executable_  
+_The executable code in app/Main.hs_  
 1. Clone this repo: git clone https://github.com/nickgeoca/nonogram_solver.git
 2. Install [stack](https://docs.haskellstack.org/en/stable/README/#how-to-install)
 3. $ cd nonogram_solver
@@ -65,7 +66,7 @@ _The test code is in test/NonogramSolverSpec.hs_
 
 ### Programming Assignment Miscallaneous
 
-* Can I reference algorithms?
+* Can I reference Nonogram solver algorithms?  
 Yes 
 
 ### Dev Checklist
