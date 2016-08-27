@@ -7,6 +7,9 @@ This is a Nonogram solver written in Python 2.7. Explanations on how to run the 
 ### How to Run the Program
 ...
 
+To run tests, also install pytest.
+
+
 
 ### Data Format
 
